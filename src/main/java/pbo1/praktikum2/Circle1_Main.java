@@ -7,16 +7,15 @@ package pbo1.praktikum2;
  */
 import java.util.Scanner;
 
-public class RunCircle1 {
+public class Circle1_Main {
     public static void main(String[] args) {
         Scanner input = new Scanner (System.in);
         
-        Circle1 circle = new Circle1();
+        Circle1 circle = new Circle1(0);
         
-        System.out.print("Masukkan jari-jari lingkaran : ");
+        System.out.print("Masukkan jari-jari lingkaran\t: ");
         circle.setRadius(input.nextDouble());
-        
-        circle.resultArea();
-        System.out.println("Luas lingkaran : "+circle.getArea());
+        circle.print();
+        System.out.println("\nProgram ini di buat oleh Gerardus Kristha Bayu 215314004");
     }
 }

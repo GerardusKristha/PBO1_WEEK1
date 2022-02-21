@@ -7,8 +7,10 @@ package pbo1.praktikum2;
  */
 public class Circle1 {
     private double radius;
-    private double area;
-
+    
+    public Circle1(double rad){
+        radius = rad;
+    }
     public void setRadius( double rad ){
         radius = rad;
     }
@@ -17,15 +19,13 @@ public class Circle1 {
     }
 
     public double getArea(){
+        double area = Math.PI*Math.pow(radius, 2);
         return area;
     }
     
-    public double resultArea(){
-        area = Math.PI*Math.pow(radius, 2);
-        return area;
-    }
-    
-    public void print(double print){
-        System.out.println(print);
+    public void print(){
+        System.out.println("-------------------------------------------");
+        System.out.println("Jari-jari lingkaran adalah\t: "+ (int)radius);
+        System.out.println("Luas lingkaran adalah\t\t: " + getArea());
     }
 }
